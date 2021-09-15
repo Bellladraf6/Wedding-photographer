@@ -1,0 +1,312 @@
+@font-face {
+    font-family: MullerRegular;
+    src: url("../fonts/Muller-Regular.ttf");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("../fonts/Muller-Bold.ttf");
+}
+
+@font-face {
+    font-family: YesevaOne;
+    src: url("../fonts/Yeseva-One.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+#header {
+    background: #FDFDFD;
+    box-shadow: 0 4px 20px rgba(189, 141, 153, 0.2);
+
+}
+
+#header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+}
+
+#header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 239px;
+    width: 500px;
+}
+
+#header-menu a {
+    font-family: MullerRegular, sans-serif;
+    text-decoration: none;
+    color: #BD8D99;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#header-menu a:hover {
+    color: #9b5e70;
+    border-bottom: 1px solid #9b5e70;
+}
+
+#main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 65px 0;
+}
+
+#main-container h1 {
+    max-width: 625px;
+    margin: 0 auto 50px auto;
+    font-family: YesevaOne, serif;
+    font-size: 38px;
+    line-height: 44px;
+    text-align: center;
+    color: #4B0012;
+}
+
+div.carousel-photos img {
+    margin: 0 17px;
+}
+
+.carousel-photos {
+    margin: 0 auto;
+    max-width: 1130px;
+    position: relative;
+}
+
+.slick-prev::before {
+    content: url("../images/Vector.png");
+}
+
+.slick-next:before {
+    content: url("../images/Vector (1).png");
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -30px;
+}
+
+.slick-prev, .slick-next {
+    width: 23px;
+    height: 42px;
+}
+
+#suggestion-title {
+    font-size: 34px;
+    line-height: 39px;
+    color: #4B0012;
+    font-family: YesevaOne, serif;
+    margin: 120px 0 43px 0;
+}
+
+#suggestions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#answers-on-questions-title {
+    font-family: YesevaOne, serif;
+    margin: 120px 0 45px 0;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    color: #4B0012;
+}
+
+#accordion {
+    width: 928px;
+    margin: 0 auto;
+}
+
+#footer {
+    background: #FCF4F4;
+    padding: 13px 0;
+}
+
+#footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#rights {
+    text-align: center;
+    margin-left: 418px;
+    color: rgba(189, 141, 153, 0.5);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: MullerRegular, sans-serif;
+}
+
+
+.ui-widget-header {
+    border: 0;
+    background: #ffffff;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+
+.ui-widget.ui-widget-content {
+    border: 0;
+}
+
+/*контейнер для "пакет включает в себя"*/
+.ui-tabs .ui-tabs-panel {
+    background: #FCF2F2;
+    border: 1px solid #FCF2F2;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    padding: 40px 4px 18px 28px;
+    width: 730px;
+}
+
+#tabs p {
+    margin: 0 0 15px 0;
+    font-family: MullerBold, sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4B0012;
+}
+
+/*контейнер ul для пакетов фотосессий*/
+#tabs>ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/*пакеты фотосессий*/
+#tabs>ul>li {
+    border: 1px solid #FCF2F2;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    /*background: #ffffff;*/
+    margin: 0;
+}
+
+#tabs>div ul {
+    padding-left: 15px;
+}
+
+/*пункты li что включает в себя пакет */
+#tabs>div li {
+    margin-bottom: 12px;
+    font-family: MullerRegular, sans-serif;
+    font-size: 16px;
+    color: #1E0108;
+}
+
+/*маркер-точка возле li*/
+#tabs li::marker {
+    color: #4B0012;
+}
+
+
+.ui-state-default a, .ui-state-default a:link {
+    font-family: MullerRegular, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*Цвет текста меню без hover*/
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #B08989;
+}
+
+/*Цвет текста меню с hover*/
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #4B0012;
+}
+
+/*Фон пунктов меню(пакеты) без hover*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: #ffffff;
+}
+
+/*Фон пунктов меню(пакеты) с hover*/
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #FCF2F2;
+}
+
+/*стиль блоков аккордеона*/
+.ui-accordion .ui-accordion-header {
+    margin: 15px 0 0 0;
+    padding: 30px 25px;
+    background: #FCF2F2;
+    border-radius: 10px;
+    position: relative;
+    font-size: 18px;
+}
+
+/*стили вопросов*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    font-family: MullerBold, sans-serif;
+    font-size: 18px;
+    color: #4B0012;
+    border: 0;
+}
+
+/*стили ответов на вопросы*/
+.ui-widget-content {
+    font-family: MullerRegular, sans-serif;
+    font-size: 16px;
+    color: #4B0012
+}
+
+/*стиль стрелки*/
+.ui-icon, .ui-widget-content .ui-icon {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon, .ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon,
+.ui-icon, .ui-widget-content .ui-icon
+{
+    background-image: url("../images/Vector3.png") !important;
+    width: 18px;
+    height: 12px;
+}
+
+.ui-icon-triangle-1-e {
+    background-position: 0;
+}
+
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 22px 10px;
+    width: 175px;
+    box-sizing: border-box;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: none;
+}
+
+.ui-accordion .ui-accordion-header .ui-state-active {
+    border-radius: 10px 10px 0 0;
+}
+
+.ui-accordion .ui-accordion-content {
+    border-color: #FCF2F2;
+    border-radius: 0 0 10px 10px;
+}
+
+.ui-icon-triangle-1-s {
+    background-position: 0;
+}
